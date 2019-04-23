@@ -10,11 +10,11 @@ HTTP RPC interface provided by this library or a custom RPC interface
 (for example IPC,...).
                        DESC
 
-  s.homepage         = 'https://github.com/Boilertalk/Web3.swift'
+  s.homepage         = 'https://github.com/luanlzsn/Web3.swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Koray Koska' => 'koray@koska.at' }
-  s.source           = { :git => 'https://github.com/Boilertalk/Web3.swift.git', :tag => s.version.to_s }
+  s.author           = { 'luanlzsn' => '331848894@qq.com' }
+  s.source           = { :git => 'https://github.com/luanlzsn/Web3.swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -32,9 +32,9 @@ HTTP RPC interface provided by this library or a custom RPC interface
     ss.source_files = 'Web3/Classes/Core/**/*'
 
     # Core dependencies
-    ss.dependency 'BigInt', '~> 3.1'
-    ss.dependency 'CryptoSwift', '~> 0.8'
-    ss.dependency 'secp256k1.swift', '~> 0.1'
+    ss.dependency 'BigInt'
+    ss.dependency 'CryptoSwift'
+    ss.dependency 'secp256k1.swift'
   end
 
   s.subspec 'HTTPExtension' do |ss|
@@ -48,7 +48,7 @@ HTTP RPC interface provided by this library or a custom RPC interface
 
     ss.dependency 'Web3/Core'
     # PromiseKit dependency
-    ss.dependency 'PromiseKit/CorePromise', '~> 6.0'
+    ss.dependency 'PromiseKit/CorePromise'
   end
 
   s.subspec 'ContractABI' do |ss|
